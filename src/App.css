@@ -1,3 +1,240 @@
+/* Modal */
+.product-bottom-details button {
+  background-color:#27ae60; 
+  color:white; 
+  border-radius:50%; 
+  width:50px; 
+  height:50px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-show {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 99vw;
+  height: 70vmax;
+  z-index: 99;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.modal-close {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  background-color: red;
+  color: yellow;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Contact button */
+/* Định dạng cho thẻ div bao ngoài */
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* Định dạng cho thẻ div chứa form liên hệ */
+.contact-card {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 50px;
+}
+
+/* Định dạng cho tiêu đề */
+.contact-card h1 {
+  text-align: center;
+}
+
+/* Định dạng cho đoạn văn */
+.contact-card p {
+  font-size: 16px;
+}
+
+/* Định dạng cho nhóm trường nhập liệu */
+.form-group {
+  margin-bottom: 10px;
+}
+
+/* Định dạng cho nhãn */
+.form-group label {
+  display: block;
+}
+
+/* Định dạng cho trường nhập liệu */
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: none; /* Bỏ viền màu đen cho các trường nhập liệu */
+  border-bottom: solid black; /* Thêm viền màu đen dưới các trường nhập liệu */
+  border-radius: 0; /* Bỏ bo góc cho các trường nhập liệu */
+}
+
+/* Cho phép người dùng resize khung của trường nhập liệu message */
+.form-group textarea {
+  resize: vertical; /* Chỉ cho phép resize theo chiều dọc */
+  max-width: 100%; /* Giới hạn chiều rộng tối đa là 100% */
+  min-width: 100%; /* Giới hạn chiều rộng tối thiểu là 100% */
+  max-height: none; /* Không giới hạn chiều cao tối đa */
+  min-height: 16px; /* Giới hạn chiều cao tối thiểu là 16px */
+}
+
+/* Định dạng cho thông báo lỗi */
+.error {
+  color: red;
+}
+
+/* Detail button */
+.detail-button {
+  width: 100px;
+  padding: 10px;
+  border: none;
+  border-radius: 90px;
+  background-color: red;
+  color: yellow;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Định dạng cho thẻ div bao ngoài */
+.container {
+  width: 80%;
+  margin: 0 auto;
+
+  /* Thêm thuộc tính display và justify-content để căn giữa theo chiều ngang */
+  display: flex;
+  justify-content: center;
+}
+
+/* Định dạng cho thẻ div chứa thông tin cầu thủ */
+.product-card {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 20px;
+
+  /* Thêm thuộc tính display và flex-direction để sắp xếp các phần tử theo chiều dọc */
+  display: flex;
+  flex-direction: column;
+
+  /* Thêm thuộc tính align-items để căn giữa các phần tử theo chiều ngang */
+  align-items: center;
+}
+
+/* Định dạng cho tên cầu thủ */
+.badge {
+  align-self: center;
+  border-radius: 50px; /* Tạo hình viên thuốc con nhộng */
+  background-color: darkgoldenrod; /* Màu nền vàng đậm */
+  color: white; /* Màu chữ trắng */
+  font-weight: bold; /* Chữ in đậm */
+  font-size: 30px;
+
+   /* Thêm thuộc tính padding để tạo khoảng cách giữa chữ và viền */
+   padding: 10px;
+
+   /* Thêm thuộc tính margin-bottom để tạo khoảng cách giữa viền dưới và hình ảnh */
+   margin-bottom: 20px;
+}
+
+/* Định dạng cho hình ảnh cầu thủ */
+.product-tumb {
+   /* Thêm thuộc tính width và height để điều chỉnh kích thước hình ảnh */
+   width: 50%;
+   height: 200px;
+   margin-bottom: 55px;
+}
+
+/* Định dạng cho tên câu lạc bộ */
+.product-details h4 {
+  color: blue; /* Màu chữ xanh dương */
+  font-size: 60px;
+  text-align: center;
+  /* Thêm thuộc tính margin-bottom để tạo khoảng cách giữa viền dưới và hình ảnh */
+  margin-bottom: 1px;
+}
+
+/* Định dạng cho giá trị thị trường */
+.product-price {
+  font-weight: bold; /* Chữ in đậm */
+  color: red; /* Màu chữ đỏ nổi bật */
+  font-size: 50px;
+  text-align: center;
+}
+
+/* Players.css */
+.players {
+  height: 100vh;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 5px;
+  margin: 10px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 480px;
+  height: auto;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+/* Footer.css */
+.footer {
+  background-color: darkgoldenrod;
+  color: white;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  height: 40px;
+  font-size: 23px;
+  margin-top: calc(5vh - 40px); /* bằng với chiều cao của cửa sổ trình duyệt trừ đi chiều cao của thanh Footer */
+}
+
+/* Header.css */
+.menu {
+  background-color: #2196f3; /* Màu xanh của navbar */
+}
+
+.brand-logo {
+  font-size: 2rem; /* Kích thước chữ của logo */
+  margin-left: 1rem; /* Khoảng cách từ logo đến mép trái */
+}
+
+li a {
+  color: white; /* Màu chữ của các link */
+}
+
+li a:hover {
+  color: #f5f5f5; /* Màu chữ khi di chuột qua các link */
+}
+
+li a i {
+  margin-right: 0.5rem; /* Khoảng cách từ icon đến chữ */
+}
+
+/* App.css */
 .App {
   text-align: center;
 }
